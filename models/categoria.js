@@ -1,4 +1,4 @@
-const { Schema, model}= require('mongoose');
+const { Schema, model }= require('mongoose');
 
 const CategoriaSchema = Schema({
     nombre:{
@@ -6,6 +6,9 @@ const CategoriaSchema = Schema({
         required:[true,'El nombre de la categoria es obligatorio'],
         unique:true
     },
+    img:{
+        type:String
+    }
 
 });
 
