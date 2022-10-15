@@ -8,7 +8,10 @@ const CategoriaSchema = Schema({
     },
     img:{
         type:String
-    }
+    },
+    name:{
+        type:String,
+        required:[true,'El nombre general es obligatorio'],    }
 
 });
 
